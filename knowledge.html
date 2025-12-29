@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src\icomoon\style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="knowledge.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="kiwi-maru-regular">
+    <div class="banner hi-melody-regular">
+        <div class="hamburger">
+            <i class="ri-menu-line"></i>
+        </div>
+        <nav class="navbar">
+            <a href="main.html">首頁</a>
+            <a href="adopt.html">領養資訊</a>
+            <a class="active" href="knowledge.html">知識百科</a>
+            <a href="favorite.html">我的收藏</a>
+        </nav>
+        <h1>知識百科</h1>
+        <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none">    
+            <path d="
+                M0,60 
+                C 240,90 480,30 720,60 
+                C 960,90 1200,30 1440,60 
+                L1440,120 L0,120 Z" 
+                fill="#FEF5E3" 
+                transform="translate(0, 5)" />
+            <path d="
+                M0,60 
+                C 240,90 480,30 720,60 
+                C 960,90 1200,30 1440,60 
+                L1440,120 L0,120 Z" 
+                fill="#fff"
+                transform="translate(0, 40)" />
+        </svg>
+    </div>
+
+    <div class="knowledge">
+        <div class="titles">
+            <span class="title">知識百科</span>
+            <span class="subtitle">一起學更多照顧毛孩的小知識吧！ </span>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search" id="knowledgeInput">
+            <select id="knowledgeSelect" name="knowledgeSelect">
+                <option>不限</option>
+                <option>行為習性</option>
+                <option>知識科普</option>
+                <option>飲食安全</option>
+                <option>情緒反應</option>
+            </select>
+        </div>
+        <div class="articles">
+        </div>
+        <div class="pagination">
+            <button class="lastPage"><<</button>
+            <ul>
+                <li class="link active" value="1">1</li>
+                <li class="link" value="2">2</li>
+                <li>...</li>
+            </ul>
+            <button class="nextPage">>></button>
+        </div>
+    </div>
+    <footer>© 2025 PawFinder　|　期末作業練習　|　
+        <a href="https://github.com/enchiaaa/pawfinder_web" target="_blank">
+            <i class="fa fa-github" style="font-size:24px;"></i>
+        </a>    
+    </footer>
+
+    <script type="text/javascript" src="data/knowledges.js"></script>
+    <script type="text/javascript" src="knowledge.js"></script>
+    <script type="text/javascript" src="all.js"></script>
+</body>
+</html>

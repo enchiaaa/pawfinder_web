@@ -1,0 +1,206 @@
+.dogs_info{
+    padding: 3rem 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.dogs_info .cards{
+    width: 70%;
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.dogs_info .cards .card{
+    position: relative;
+    overflow: hidden;
+    max-width: 450px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1.5rem; */
+    background-color: var(--light_yellow);
+    border-radius: 16px;
+    padding-bottom: 1rem;
+    box-shadow: 0px 4px 20px -2px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 4px 20px -2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 20px -2px rgba(0,0,0,0.25);
+}
+
+.dogs_info .cards .card:hover{
+    transform: scale(1.05);
+    transition: transform 150ms ease-in-out;
+}
+.dogs_info .cards .card:nth-child(even){
+    background-color: white;
+}
+
+.dogs_info .cards .card img{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 100%;
+    /* height: 10rem; */
+    aspect-ratio: 5/3;
+    object-fit: cover;
+}
+
+.dogs_info .cards .card .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 2rem;
+}
+
+.cards span{
+    font-size:var(--fs-sm);
+}
+.icon-heart{
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background-color: white;
+}
+
+.icons{
+    display: flex;
+    gap: 1.4rem;
+}
+
+.icon{
+    cursor: pointer;
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background-color: var(--yellow);
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.12) ;
+    -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.12) ;
+    -moz-box-shadow: 1px 1px 2px 2px rgba(71, 46, 8, 0.12) ;
+    position: relative;
+}
+
+.icon:hover{
+    background-color: var(--dark_yellow);
+    opacity: 1;
+}
+
+.icon::after{
+    position: absolute;
+    content: attr(data-tooltip);
+    font-size: 0.65rem;
+    pointer-events: none;
+    width: 3rem;
+    text-align: center;
+    /* padding: 0.1rem 0.5rem; */
+    border-radius: 0.25rem;
+    background-color: gray;
+    color:white;
+    top: 125%;
+    left: -25%;
+    opacity: 0;
+}
+
+.icon:hover::after{
+    opacity: 1;
+}
+
+.icon:nth-child(even){
+    background-color: white;
+}
+
+.icon:nth-child(even):hover{
+    background-color: var(--gray);
+}
+
+.icon-map-marker:before {
+    content: "\e900";
+    color: var(--yellow);
+    font-size: 1.3rem;
+}
+
+.icon-phone:before {
+    content: "\e942";
+    color: white;
+    font-size: 1rem;
+}
+
+.shelter_info{
+    background-color: var(--light_yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem 0px;
+    gap: 3rem;
+}
+
+.shelter_info .info{
+    width: 60%;
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.shelter_info .info .map{
+    border-radius: 28px;
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+    aspect-ratio: 3/4;
+}
+
+.shelter_info .info .cards{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.shelter_info .info .shelter{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.shelter_info .info .shelter .cards .card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem 1rem 2rem;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.card span{
+    text-align: start;
+}
+
+@media(max-width: 1024px){ 
+    .shelter_info .info{
+        display: flex;
+        flex-direction: column;
+        gap:5rem;
+        justify-content: center;
+        align-items: center;
+    }
+}

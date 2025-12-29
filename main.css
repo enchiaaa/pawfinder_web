@@ -1,0 +1,193 @@
+.knowledge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.knowledge img{
+    width: 10rem;
+    rotate: -4deg;
+}
+
+.knowledge .container{
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+    background: var(--light_yellow);
+    padding: 2rem 2rem;
+    line-height: 1.6;
+
+    clip-path: polygon(
+        4% 0%,   12% 2%,  25% 0%,   40% 3%,  60% 0%,  78% 4%,  92% 0%,
+        100% 12%, 
+        97% 28%, 100% 45%, 96% 62%, 100% 78%,
+        94% 100%, 80% 96%, 65% 100%, 48% 97%, 30% 100%, 18% 96%, 6% 100%,
+        0% 85%, 3% 70%, 0% 55%, 4% 35%, 0% 18%
+    );
+}
+
+.knowledge .container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adopt{
+    background-color: var(--light_yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 70px;
+}
+
+.container{
+    width: 70%;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.carousel {
+    width: 70%;
+    aspect-ratio: 4/3;
+    background: #FAFAFA;
+    position: relative;
+}
+
+.carousel-cell {
+    margin-right: 1.5rem;
+    counter-increment: gallery-cell;
+    opacity: 0.9;
+}
+
+.carousel-cell img{
+    width: 500px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 0.5rem; 
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.12) ;
+    -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.12) ;
+    -moz-box-shadow: 1px 1px 2px 2px rgba(71, 46, 8, 0.12) ;
+    transform: scale(0.95);
+    opacity: 0.7;
+    transition: 0.8s;
+    position: relative;
+}
+
+.carousel-cell img.is-selected {
+    transform: scale(1.1);
+    border-radius: 0.5rem; 
+    opacity: 1;
+}
+
+.flickity-page-dots{
+    top: 90%;
+}
+
+.flickity-page-dots li.dot{
+    background-color: white;
+}
+
+.flickity-button.flickity-prev-next-button{
+    box-shadow: none;
+    background-color: transparent;
+    width: 2.25rem;
+    height: 2.25rem;
+    z-index: 222;
+    color:white;
+}
+
+.flickity-button.flickity-prev-next-button:hover{
+    background-color: transparent;
+    color:var(--yellow);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80%;
+    border-radius: 10px;
+    animation: fadeIn .2s;
+    overflow-y: scroll;
+    scrollbar-color: gray transparent;
+    scrollbar-width: thin;
+}
+
+.close {
+    float: right;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width: 1024px){ 
+    .shelter_info .info{
+        display: flex;
+        flex-direction: column;
+        gap:5rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .knowledge img{
+        display: none;
+    }
+    .knowledge .container{
+        width: 70%;
+    }
+
+    .container{
+        width: 100%;
+    }
+    .carousel {
+        width: 100%;
+        aspect-ratio: unset; 
+    }
+
+    .carousel-cell img {
+        width: 100%;                    
+        aspect-ratio: 4 / 3;      
+        transform: scale(1);        
+        opacity: 1;                 
+        border-radius: 0.5rem;
+    }
+
+    .carousel-cell {
+        margin-right: 1rem;
+    }
+
+    .flickity-page-dots{
+        top: 80%;
+    }
+}

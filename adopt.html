@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src\icomoon\style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adopt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="kiwi-maru-regular">
+
+    <div class="banner hi-melody-regular">
+        <div class="hamburger">
+            <i class="ri-menu-line"></i>
+        </div>
+        <nav class="navbar">
+            <a href="main.html">首頁</a>
+            <a class="active" href="adopt.html">領養資訊</a>
+            <a href="knowledge.html">知識百科</a>
+            <a href="favorite.html">我的收藏</a>
+        </nav>
+        <h1>領養資訊</h1>
+        <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none">    
+            <path d="
+                M0,60 
+                C 240,90 480,30 720,60 
+                C 960,90 1200,30 1440,60 
+                L1440,120 L0,120 Z" 
+                fill="#FEF5E3" 
+                transform="translate(0, 5)" />
+            <path d="
+                M0,60 
+                C 240,90 480,30 720,60 
+                C 960,90 1200,30 1440,60 
+                L1440,120 L0,120 Z" 
+                fill="#fff"
+                transform="translate(0, 40)" />
+        </svg>
+    </div>
+    <div class="dogs_info">
+        <div class="titles">
+            <span class="title">正在尋家的可愛夥伴們</span>
+            <span class="subtitle">可愛又溫柔的牠們，準備好和你一起開啟新生活！</span>
+        </div>
+        <div class="cards">
+        </div>
+
+        <div class="pagination"  data-target="dogs_info">
+            <button class="lastPage"><<</button>
+            <ul>
+                <li class="link active" value="1">1</li>
+                <li class="link" value="2">2</li>
+                <li>...</li>
+            </ul>
+            <button class="nextPage">>></button>
+        </div>
+
+    </div>
+
+    <div class="shelter_info">
+        <div class="titles">
+            <span class="title">尋找附近的動物之家/民間救援站</span>
+            <span class="subtitle">找找最近的動物之家，一起去看看牠們吧！</span>
+        </div>
+        <div class="info">
+            <div class="shelter">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <select data-target="地區分類">
+                        <option>不限</option>
+                        <option>臺北市</option>
+                        <option>新北市</option>
+                        <option>桃園市</option>
+                        <option>臺中市</option>
+                        <option>臺南市</option>
+                        <option>高雄市</option>
+                    </select>
+                </div>
+                <div class="cards">
+                </div>
+                <!-- <div class="pagination" data-target="shelter_info">
+                    <button class="lastPage"><<</button>
+                    <ul>
+                        <li class="link active" value="1">1</li>
+                        <li class="link" value="2">2</li>
+                        <li>...</li>
+                    </ul>
+                    <button class="nextPage">>></button>
+                </div> -->
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d64924.45416153498!2d121.4766669105432!3d25.03171243061644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5YuV54mp5LmL5a62!5e0!3m2!1szh-TW!2stw!4v1764225499424!5m2!1szh-TW!2stw" width="700" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>© 2025 PawFinder　|　期末作業練習　|　
+        <a href="https://github.com/enchiaaa/pawfinder_web" target="_blank">
+            <i class="fa fa-github" style="font-size:24px;"></i>
+        </a>    
+    </footer>
+
+    <script type="text/javascript" src="data/shelters.js"></script>
+    <script type="text/javascript" src="data/dogs.js"></script>
+    <script type="text/javascript" src="adopt.js"></script>
+    <script type="text/javascript" src="all.js"></script>
+</body>
+</html>

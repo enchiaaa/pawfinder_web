@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+
+</style>
+<body class="kiwi-maru-regular">
+    <div class="banner hi-melody-regular">
+        <div class="hamburger">
+            <i class="ri-menu-line"></i>
+        </div>
+        <nav class="navbar">
+            <a class="active" href="main.html">首頁</a>
+            <a href="adopt.html">領養資訊</a>
+            <a href="knowledge.html">知識百科</a>
+            <a href="favorite.html">我的收藏</a>
+        </nav>
+        <h1>狗狗資訊平台</h1>
+        <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none">    
+            <path d="
+                M0,60 
+                C 240,90 480,30 720,60 
+                C 960,90 1200,30 1440,60 
+                L1440,120 L0,120 Z" 
+                fill="#FEF5E3" 
+                transform="translate(0, 5)" />
+            <path d="
+                M0,60 
+                C 240,90 480,30 720,60 
+                C 960,90 1200,30 1440,60 
+                L1440,120 L0,120 Z" 
+                fill="#fff"
+                transform="translate(0, 40)" />
+        </svg>
+    </div>
+
+    <div class="news">
+        <div class="titles">
+            <span class="title">最新消息</span>
+            <span class="subtitle">最新的活動、公告都在這裡！</span>
+        </div>
+        <div class="articles">
+        </div>
+        <div class="pagination">
+            <button class="lastPage"><<</button>
+            <ul>
+                <li class="link active" value="1">1</li>
+                <li class="link" value="2">2</li>
+                <li>...</li>
+            </ul>
+            <button class="nextPage">>></button>
+        </div>
+    </div>
+
+    <div id="articleModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="modal-title"></h2>
+            <p class="modal-publisher-time"></p>
+            <p class="modal-body"></p>
+        </div>
+    </div>
+
+    <div class="knowledge">
+        <img src="./src/dog05.png" alt="">
+        <div class="container">
+            <div class="content">
+                <span><b>今日小知識</b></span>
+                <span>狗狗的鼻紋就像人類的指紋，每一隻都獨一無二，可用來辨識身分 </span>
+            </div>
+            <button><a href="./knowledge.html" style="text-decoration: none; color: white;">狗狗知識百科 →</a></button>
+        </div>
+    </div>
+
+    <div class="adopt">
+        <div class="titles">
+            <span class="title">看看有沒有喜歡的狗狗！</span>
+            <span class="subtitle">牠們準備好和你一起開啟新生活！</span>
+        </div>
+        
+        <div class="container">
+            <div class="main-carousel">
+                <div class="carousel-cell ">
+                    <img class="is-selected" src="./src/09.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./src/02.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./src/03.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./src/04.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./src/05.png" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="./src/06.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <button><a href="./adopt.html" style="text-decoration: none; color: white;">查看更多狗狗 →</a></button>
+    </div>
+    
+    <footer>© 2025 PawFinder　|　期末作業練習　|　
+        <a href="https://github.com/enchiaaa/pawfinder_web" target="_blank">
+            <i class="fa fa-github" style="font-size:24px;"></i>
+        </a>    
+    </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+    <script type="text/javascript" src="data/news.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="all.js"></script>
+</body>
+</html>
