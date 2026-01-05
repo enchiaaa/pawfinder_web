@@ -299,12 +299,12 @@ select{
 }
 
 .news-date{
-    width: 15%;
+    /* width: 15%; */
     white-space: nowrap;
 }
 
 .news-title{
-    width: 85%;
+    /* width: 85%; */
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
@@ -384,6 +384,10 @@ select{
         transform: translateY(0);
     }
 
+    .articles{
+        width: 90%;
+    }
+    
     .article{
         gap: 1rem;
         padding-inline: 1rem;
