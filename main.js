@@ -97,7 +97,6 @@ var flkty = new Flickity(elem, {
 const images = document.querySelectorAll(".carousel-cell img");
 
 flkty.on('select', function (index) {
-    console.log(images)
     images.forEach(image => {
         image.classList.remove("is-selected");
     });

@@ -335,26 +335,17 @@ select{
     border-radius: 3px;
 }
 
-/* 平板 */
-@media(max-width: 1024px){
+@media (max-width: 768px) {
     .banner{
         height: 35vh;
     }
 
     .banner h1 {
         left: 8%;
-        bottom: 22%;
+        bottom: 25%;
         letter-spacing: 0.3rem;
     }
 
-    .navbar {
-        gap: 2rem;
-        padding: 1.5rem 0;
-    }
-}
-
-/* 手機版 RWD */
-@media (max-width: 768px) {
     .hamburger {
         display: block;
     }

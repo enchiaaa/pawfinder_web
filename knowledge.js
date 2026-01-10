@@ -39,8 +39,6 @@ function updateKnowledges() {
     const end = start + PER_PAGE;
     const pageData = filteredKnowledge.slice(start, end);
 
-    console.log(pageData);
-
     pageData.forEach(item => {
         let divArticle = document.createElement("div");
         divArticle.classList = "article";
